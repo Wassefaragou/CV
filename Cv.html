@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wassef Aragou - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #2f2f49;
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      animation: fadeIn 1s ease-out;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    .social-icons {
+      margin-top: 0.5rem;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: #4cc9f0;
+      font-size: 1.5rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #f72585;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    h2 {
+      border-left: 4px solid #f72585;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+      color: #f72585;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    a {
+      color: #4cc9f0;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2f2f49;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wassef Aragou</h1>
+    <p>Élève Ingénieur | AI & Data Science Enthusiast</p>
+    <p>Mhamid 10, Marrakech • <a href="mailto:aragou.wassef@gmail.com">aragou.wassef@gmail.com</a> • +212 689212747</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/wassef-aragou-7569a9270/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Wassefaragou" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <section>
+    <h2>FORMATION ACADÉMIQUE</h2>
+    <div class="card">
+      <strong>École Mohammadia d’Ingénieurs</strong> (2023 - Présent)<br>
+      Génie Modélisation et Informatique Scientifique (MIS), Rabat
+    </div>
+    <div class="card">
+      <strong>CPGE</strong> (2021 - 2023)<br>
+      Technologies des Sciences Industrielles, Safi
+    </div>
+    <div class="card">
+      <strong>Baccalauréat</strong> (2020 - 2021)<br>
+      Sciences et Technologies Électriques, Marrakech
+    </div>
+  </section>
+
+  <section>
+    <h2>EXPÉRIENCES PROFESSIONNELLES (STAGES)</h2>
+    <div class="card">
+      <strong>OCP GROUP - Jorf Lasfar</strong> (Août 2024 - 1 mois)<br>
+      Modélisation d’émissions de SO₂ avec un réseau de neurones + interface Streamlit pour visualisation temps réel.
+    </div>
+    <div class="card">
+      <strong>Haut-Commissariat au Plan - Rabat</strong> (Juillet 2024 - 1 mois)<br>
+      Prédiction du statut d’emploi avec modèles ML : logistic regression, random forest, réseau neuronal.
+    </div>
+  </section>
+
+  <section>
+    <h2>PROJETS ACADÉMIQUES</h2>
+    <div class="card">
+      Application de prédiction du cancer du sein avec estimation de stade et coût de traitement.
+    </div>
+    <div class="card">
+      Compression et complétion d’images via autoencoders et transformers.
+    </div>
+    <div class="card">
+      Comparaison SARIMA vs Prophet pour la prévision de tendances de recherche sur Google (mot-clé "Football").
+    </div>
+  </section>
+
+  <section>
+    <h2>CERTIFICATS</h2>
+    <div class="card">
+      • Stanford’s Machine Learning Specialization<br>
+      • DeepLearning.AI’s Deep Learning Specialization<br>
+      • Yale’s Financial Markets certificate<br>
+      • Data Analytics for Lean Six Sigma
+    </div>
+  </section>
+
+  <section>
+    <h2>COMPÉTENCES</h2>
+    <div class="card">
+      <strong>Langages :</strong> Python, R, SQL, Java, JS, TS, C/C++, VB.NET, VBA, CSS, HTML, LaTeX<br>
+      <strong>Outils :</strong> Git, Docker, APIs, SPSS, Minitab, Power BI, Matlab, Simulink, Bash, Excel, AutoCAD, SolidWorks<br>
+      <strong>Frameworks :</strong> TensorFlow, PyTorch, Scikit-learn, Django, Streamlit, Flask, Tkinter, React, Next.js<br>
+      <strong>Langues :</strong> Français (pro), Anglais (pro), Arabe (natif)
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Wassef Aragou • All rights reserved
+  </footer>
+</body>
+</html>
