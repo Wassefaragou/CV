@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
   <title>Wassef Aragou - Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,7 +18,7 @@
     }
     header {
       background: #2f2f49;
-      padding: 1.5rem;
+      padding: 1rem;
       text-align: center;
       position: sticky;
       top: 0;
@@ -25,12 +26,12 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     header h1 {
-      font-size: 2.2rem; /* Reduced font size */
+      font-size: 1.5rem; /* Reduced font size */
       margin: 0;
       animation: fadeIn 1s ease-out;
     }
     header p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: #ccc;
     }
     .social-icons {
@@ -44,7 +45,7 @@
     }
     .social-icons a:hover {
       transform: scale(1.2);
-      color: #f72585;
+      color: #000000;
     }
     section {
       padding: 2rem;
@@ -53,10 +54,10 @@
       animation: fadeInUp 1s ease-in-out;
     }
     h2 {
-      border-left: 4px solid #f72585;
+      border-left: 4px solid #000000;
       padding-left: 10px;
       margin-bottom: 1rem;
-      color: #f72585;
+      color: #000000;
     }
     .card {
       background: rgba(255, 255, 255, 0.1);
@@ -71,11 +72,35 @@
     }
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
       background: #2f2f49;
       color: #aaa;
       font-size: 0.9rem;
     }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+      header p {
+        font-size: 0.8rem;
+      }
+      .social-icons a {
+        font-size: 1.2rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      .card {
+        padding: 0.8rem;
+      }
+      footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+      }
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -83,6 +108,9 @@
     @keyframes fadeInUp {
       from { transform: translateY(20px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
+    }
+    .strong {
+      color: #000000;
     }
   </style>
 </head>
@@ -139,7 +167,7 @@
   </section>
 
   <section>
-    <h2>CERTIFICATIONS</h2>
+    <h2>CERTIFICATES</h2>
     <div class="card">
       • Stanford’s Machine Learning Specialization<br>
       • DeepLearning.AI’s Deep Learning Specialization<br>
@@ -151,10 +179,10 @@
   <section>
     <h2>SKILLS</h2>
     <div class="card">
-      <strong>Languages:</strong> Python, R, SQL, Java, JS, TS, C/C++, VB.NET, VBA, CSS, HTML, LaTeX<br>
-      <strong>Tools:</strong> Git, Docker, APIs, SPSS, Minitab, Power BI, Matlab, Simulink, Bash, Excel, AutoCAD, SolidWorks<br>
-      <strong>Frameworks:</strong> TensorFlow, PyTorch, Scikit-learn, Django, Streamlit, Flask, Tkinter, React, Next.js<br>
-      <strong>Languages:</strong> French (Professional), English (Professional), Arabic (Native)
+      <strong class="strong">Languages:</strong> Python, R, SQL, Java, JS, TS, C/C++, VB.NET, VBA, CSS, HTML, LaTeX<br>
+      <strong class="strong">Tools:</strong> Git, Docker, APIs, SPSS, Minitab, Power BI, Matlab, Simulink, Bash, Excel, AutoCAD, SolidWorks<br>
+      <strong class="strong">Frameworks:</strong> TensorFlow, PyTorch, Scikit-learn, Django, Streamlit, Flask, Tkinter, React, Next.js<br>
+      <strong class="strong">Languages:</strong> French (Professional), English (Professional), Arabic (Native)
     </div>
   </section>
 
