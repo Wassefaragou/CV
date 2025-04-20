@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
   <title>Wassef Aragou - Resume</title>
+  <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -15,10 +15,11 @@
       color: #fff;
       line-height: 1.6;
       scroll-behavior: smooth;
+      animation: fadeIn 2s ease-in;
     }
     header {
       background: #2f2f49;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       text-align: center;
       position: sticky;
       top: 0;
@@ -26,49 +27,60 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     header h1 {
-      font-size: 1.5rem; /* Reduced font size */
+      font-size: 2rem;
       margin: 0;
-      animation: fadeIn 1s ease-out;
+      animation: fadeInDown 1s ease-out;
     }
-    header p {
-      font-size: 0.9rem;
+    header p, header a {
       color: #ccc;
+      font-size: 1rem;
     }
     .social-icons {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
     .social-icons a {
       margin: 0 0.5rem;
       color: #4cc9f0;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       transition: transform 0.3s, color 0.3s;
     }
     .social-icons a:hover {
       transform: scale(1.2);
-      color: #000000;
+      color: #ffffff;
     }
     section {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      animation: fadeInUp 1s ease-in-out;
+      animation: fadeInUp 1.5s ease-in-out;
     }
     h2 {
-      border-left: 4px solid #000000;
-      padding-left: 10px;
+      border-left: 4px solid #4cc9f0;
+      padding-left: 12px;
       margin-bottom: 1rem;
-      color: #000000;
+      color: #4cc9f0;
+      font-size: 1.8rem;
     }
     .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .strong {
+      color: #000000;
+    }
+    .card:hover {
+      transform: translateY(-5px);
     }
     a {
       color: #4cc9f0;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -76,93 +88,88 @@
       background: #2f2f49;
       color: #aaa;
       font-size: 0.9rem;
+      margin-top: 3rem;
     }
-
-    /* Mobile-specific styles */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.2rem;
-      }
-      header p {
-        font-size: 0.8rem;
-      }
-      .social-icons a {
-        font-size: 1.2rem;
-      }
-      section {
-        padding: 1.5rem;
-      }
-      .card {
-        padding: 0.8rem;
-      }
-      footer {
-        font-size: 0.8rem;
-        padding: 1rem;
-      }
+      header h1 { font-size: 1.5rem; }
+      section { padding: 1.5rem; }
+      .card { padding: 1rem; }
     }
-
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-    @keyframes fadeInUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .strong {
-      color: #000000;
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Wassef Aragou</h1>
-    <p>Engineering Student | AI & Data Science Enthusiast</p>
-    <p>Agdal, Rabat • <a href="mailto:aragou.wassef@gmail.com">aragou.wassef@gmail.com</a> • +212 689212747</p>
+    <p>Engineering Student <span style="color:#0cc6ff;">•</span> AI & Data Science Enthusiast  <span style="color:#0cc6ff;">|</span>  Agdal, Rabat <span style="color:#0cc6ff;">•</span> <a href="mailto:aragou.wassef@gmail.com">aragou.wassef@gmail.com</a> <span style="color:#0cc6ff;">•</span> +212 689212747</p>
     <div class="social-icons">
-      <a href="https://www.linkedin.com/in/wassef-aragou-7569a9270/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Wassefaragou" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/wassef-aragou-7569a9270" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Wassefaragou" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </header>
 
   <section>
     <h2>EDUCATION</h2>
     <div class="card">
-      <strong>Mohammadia School of Engineers - Rabat</strong> (2023 - Present)<br>
-      Engineering Modeling and Scientific Computing (MIS) 
+      <strong>Mohammadia School of Engineers</strong> (2023 - Present)<br>
+      Engineering Degree in Modeling and Scientific Computing (MIS), Rabat
     </div>
     <div class="card">
-      <strong>Preparatory Classes for Engineering Schools - Safi</strong> (2021 - 2023)<br>
-      Industrial Science and Technologies
+      <strong>Preparatory Classes for Engineering Schools</strong> (2021 - 2023)<br>
+      Industrial Science and Technologies, Safi
     </div>
     <div class="card">
-      <strong>Baccalaureate - Marrakech</strong> (2020 - 2021)<br>
-      Electrical Science and Technologies
+      <strong>Baccalaureate</strong> (2020 - 2021)<br>
+      Electrical Science and Technologies, Marrakech
     </div>
   </section>
 
   <section>
     <h2>PROFESSIONAL EXPERIENCE (INTERNSHIPS)</h2>
     <div class="card">
-      <strong>OCP GROUP - Jorf Lasfar, El Jadida</strong> (August 2024 - 1 month)<br>
-      Development of a neural network model to predict sulfur dioxide emissions during sulfuric acid production, with an optimization goal to minimize these emissions. Creation of an interactive Streamlit interface to visualize predictions and analyses in real time, facilitating industrial decision-making. 
+      <strong>OCP GROUP - Jorf Lasfar</strong> (August 2024 - 1 month)<br>
+      Development of a neural network model to predict sulfur dioxide emissions during sulfuric acid production, with an optimization goal to minimize these emissions. Creation of an interactive Streamlit interface to visualize predictions and analyses in real time, facilitating industrial decision-making.
+      <br><a href="https://github.com/Wassefaragou/Stage_ocp_pfa" target="_blank">[Project Repo]</a>
     </div>
     <div class="card">
-      <strong>High Commission for Planning - Agdal, Rabat</strong> (July 2024 - 1 month)<br>
-      EUtilization of real-world data provided by the HIGH COMMISSION FOR PLANNING to predict employment status (employed or unemployed) using machine learning models: logistic regression, random forest, and neural network. Comparative performance analysis and model interpretation were conducted to identify the most influential socio-economic and demographic factors affecting youth unemployment.
+      <strong>High Commission for Planning - Rabat</strong> (July 2024 - 1 month)<br>
+      Utilization of real-world data provided by the HIGH COMMISSION FOR PLANNING to predict employment status (employed or unemployed) using machine learning models: logistic regression, random forest, and neural network. Comparative performance analysis and model interpretation were conducted to identify the most influential socio-economic and demographic factors affecting youth unemployment.
+      <br><a href="https://github.com/Wassefaragou/Stage_hcp" target="_blank">[Project Repo]</a>
     </div>
   </section>
 
   <section>
     <h2>ACADEMIC PROJECTS</h2>
     <div class="card">
+      <strong>Fantasy Premier League (FPL) RAG Assistant</strong><br>
+      Built an LLM-powered Retrieval-Augmented Generation (RAG) system that connects real-time FPL player stats with GPT models (3.5, 4, 4o) to offer personalized, expert-level advice.
+      <br><a href="https://github.com/Wassefaragou/fpl_rag_project" target="_blank">[Project Repo]</a>
+    </div>
+    <div class="card">
+      <strong>AI Solution for Image Compression and Completion</strong><br>
+      Developed an advanced AI solution combining autoencoders and transformer architectures for effective image compression and accurate reconstruction of missing or corrupted image regions.
+      <br><a href="https://github.com/Wassefaragou/image_compressor" target="_blank">[Project Repo]</a>
+    </div>
+    <div class="card">
+      <strong>Breast Cancer Prediction Application</strong><br>
       Development of a breast cancer prediction application based on machine learning, enabling the estimation of risk, cancer stage, and treatment costs.
+      <br><a href="https://github.com/Wassefaragou/Breast_cancer_prediction" target="_blank">[Project Repo]</a>
     </div>
     <div class="card">
-      Design of an artificial intelligence solution combining autoencoders and transformers for image compression and the reconstruction of missing or corrupted areas.
-    </div>
-    <div class="card">
-      SARIMA vs Prophet comparison for forecasting Google search trends (keyword "Football").
+      <strong>SARIMA vs Facebook Prophet Forecasting</strong><br>
+      Google search trends analysis ("Football").
+      <br><a href="https://github.com/Wassefaragou/Sarima-v-Prophet" target="_blank">[Project Repo]</a>
     </div>
   </section>
 
@@ -179,9 +186,9 @@
   <section>
     <h2>SKILLS</h2>
     <div class="card">
-      <strong class="strong">Languages:</strong> Python, R, SQL, Java, JS, TS, C/C++, VB.NET, VBA, CSS, HTML, LaTeX<br>
-      <strong class="strong">Tools:</strong> Git, Docker, APIs, SPSS, Minitab, Power BI, Matlab, Simulink, Bash, Excel, AutoCAD, SolidWorks<br>
-      <strong class="strong">Frameworks:</strong> TensorFlow, PyTorch, Scikit-learn, Django, Streamlit, Flask, Tkinter, React, Next.js<br>
+      <strong class="strong">Programming:</strong> Python • R • SQL • Java • JS • TS • C/C++ • VB.NET • VBA • CSS • HTML • LaTeX<br>
+      <strong class="strong">Tools:</strong> Git • Docker • APIs • IBM SPSS • Minitab • Power BI • Shell Unix • Excel • Access • Google Cloud<br>
+      <strong class="strong">Frameworks:</strong> TensorFlow • PyTorch • Scikit-learn • Langchain • Hugging Face • Django Flask • Streamlit • React • Next.js<br>
       <strong class="strong">Languages:</strong> French (Professional), English (Professional), Arabic (Native)
     </div>
   </section>
